@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #6c757d;
+}
+
+header {
+  background-color: #f8f9fa;
+  width: 100%;
+  position: fixed; /*بخلي الهيدر ثابت لما نعمل سكرول */
+  z-index: 999; /*بخلي الهيدر ما يطلع فوقه شي  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+.logo {
+  text-decoration: none;
+  color: #212529;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.logo:hover {
+  color: #212529;
+}
+.navigation {
+  margin-left: 400px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.navigation a:hover {
+  color: #ff0000;
+}
+
+#logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-img img {
+  margin-right: 50px;
+  width: 70px;
+  height: 70px;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card {
+  margin-top: 300px;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 18em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 40px;
+  transition: 0.7s ease;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+}
+
+#img {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  color: brown;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.cart {
+  position: relative;
+  font-size: 30px;
+  padding: 5px;
+  color: #f8f9fa;
+  background-color: #212529;
+  border-radius: 5px;
+}
+
+.cartAmount {
+  font-size: 16px;
+  top: -15px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  padding: 3px;
+  border-radius: 3px;
+}
