@@ -63,29 +63,6 @@ header {
   width: 70px;
   height: 70px;
 }
-.shop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.product-card {
-  border: 1px solid #fff;
-  min-height: 14em;
-  width: 18em;
-  overflow: hidden;
-  border-radius: 10px;
-
-  transition: 0.7s ease;
-  background-color: #fff;
-}
-
-.product-card:hover {
-  transform: scale(1.1);
-}
-
-#img {
-  width: 100%;
-}
 
 .cart {
   position: relative;
@@ -103,32 +80,87 @@ header {
   background-color: red;
   color: white;
   position: absolute;
-  padding: 0.5px 3px;
+  padding: 3px;
   border-radius: 3px;
-}
-
-.buttons {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
-  bottom: 30px;
-  right: 20px;
-  font-size: 18px;
-}
-
-.information {
-  margin-left: 10px;
-}
-
-h4 {
-  font-size: 20px;
 }
 
 .text-center {
   text-align: center;
+  margin-top: 70px;
   margin-bottom: 20px;
+}
+
+.cart-item img {
+  border-radius: 5px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: #f8f9fa;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.checkout {
+  background-color: green;
+  margin-right: 10px;
+}
+.removeAll {
+  background-color: #ff0000;
+}
+
+.bi-x-lg {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shopping-cart {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  grid-template-columns: repeat(
+    1,
+    320px
+  ); /* رقم واحد يعني عمود واحد والرقم الثاني يعني  عرض العامود */
+}
+
+.cart-item {
+  border: 2px solid #212529;
+  display: flex;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.title-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 195px;
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px 0px 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1.5px 3px;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
 }
 
 .bi-dash-lg {
@@ -138,11 +170,6 @@ h4 {
   color: green;
 }
 
-.shop {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 200px;
+.calck {
+  margin: 0px 0px 10px 10px;
 }
